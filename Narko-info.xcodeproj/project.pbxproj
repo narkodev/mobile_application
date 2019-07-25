@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D74D8794217A1FEA00B4E055 /* SidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D8793217A1FEA00B4E055 /* SidebarController.m */; };
+		D74D8797217A299100B4E055 /* OrganizationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D8796217A299100B4E055 /* OrganizationController.m */; };
+		D75EE6582175062D00637E88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D75EE6572175062D00637E88 /* AppDelegate.m */; };
+		D75EE65E2175062D00637E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75EE65C2175062D00637E88 /* Main.storyboard */; };
+		D75EE6602175062E00637E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75EE65F2175062E00637E88 /* Assets.xcassets */; };
+		D75EE6632175062E00637E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75EE6612175062E00637E88 /* LaunchScreen.storyboard */; };
+		D75EE6662175062E00637E88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D75EE6652175062E00637E88 /* main.m */; };
+		D75EE67421750C2F00637E88 /* DrugLawDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75EE67321750C2F00637E88 /* DrugLawDetailController.m */; };
+		D76DA52D22712EF200F967EE /* SaveDataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = D76DA52C22712EF200F967EE /* SaveDataSingleton.m */; };
+		D795819D224FC79B0098862E /* DrugListController.m in Sources */ = {isa = PBXBuildFile; fileRef = D795819C224FC79B0098862E /* DrugListController.m */; };
+		D79581A0224FC7B70098862E /* DrugDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D795819F224FC7B70098862E /* DrugDetailController.m */; };
+		D79581AA224FC8060098862E /* CriminalLawController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79581A2224FC8060098862E /* CriminalLawController.m */; };
+		D79581AC224FC8060098862E /* CommonLawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79581A8224FC8060098862E /* CommonLawViewController.m */; };
+		D79581AD224FC8060098862E /* AdministrativeLawController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79581A9224FC8060098862E /* AdministrativeLawController.m */; };
+		D7A3C1892294990B002D1664 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3C1882294990B002D1664 /* PhotoController.m */; };
+		D7A3C18D229499E8002D1664 /* ResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3C18C229499E8002D1664 /* ResultController.m */; };
+		D7C91BCA222DE3BF0080F35B /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C91BC9222DE3BF0080F35B /* CityTableViewController.m */; };
+		D7D9FAF2225038040031C9A3 /* SupportController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9FAF1225038040031C9A3 /* SupportController.m */; };
+		D7D9FAF5225038FE0031C9A3 /* ReportController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9FAF4225038FE0031C9A3 /* ReportController.m */; };
+		D7D9FAF822503C820031C9A3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D9FAF722503C820031C9A3 /* CoreLocation.framework */; };
+		D7FA0B7B2252C11100DB6ADB /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FA0B7A2252C11100DB6ADB /* GoogleMapsBase.framework */; };
+		D7FA0B7F2252C12200DB6ADB /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FA0B7C2252C12000DB6ADB /* GoogleMapsCore.framework */; };
+		D7FA0B802252C12200DB6ADB /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D7FA0B7D2252C12100DB6ADB /* GoogleMaps.bundle */; };
+		D7FA0B812252C12200DB6ADB /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FA0B7E2252C12200DB6ADB /* GoogleMaps.framework */; };
+		D7FA0B822252C14F00DB6ADB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA2C22504A71002FA6B9 /* Accelerate.framework */; };
+		D7FA0B832252C15800DB6ADB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA2E22504A91002FA6B9 /* CoreData.framework */; };
+		D7FA0B842252C15E00DB6ADB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3022504A97002FA6B9 /* CoreGraphics.framework */; };
+		D7FA0B852252C16300DB6ADB /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3222504A9D002FA6B9 /* CoreImage.framework */; };
+		D7FA0B862252C16D00DB6ADB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3422504AA4002FA6B9 /* CoreTelephony.framework */; };
+		D7FA0B872252C17000DB6ADB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3622504AAA002FA6B9 /* CoreText.framework */; };
+		D7FA0B882252C17600DB6ADB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3822504AAF002FA6B9 /* GLKit.framework */; };
+		D7FA0B892252C17B00DB6ADB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3A22504AB4002FA6B9 /* ImageIO.framework */; };
+		D7FA0B8A2252C18700DB6ADB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3C22504ABC002FA6B9 /* libc++.tbd */; };
+		D7FA0B8B2252C19000DB6ADB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA3E22504AC3002FA6B9 /* libz.tbd */; };
+		D7FA0B8C2252C19700DB6ADB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA4022504ACA002FA6B9 /* OpenGLES.framework */; };
+		D7FA0B8D2252C19C00DB6ADB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA4222504AD2002FA6B9 /* QuartzCore.framework */; };
+		D7FA0B8E2252C1A100DB6ADB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA4422504AD7002FA6B9 /* SystemConfiguration.framework */; };
+		D7FA0B8F2252C1A700DB6ADB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C1CA4622504ADC002FA6B9 /* UIKit.framework */; };
+		D7FA0B922252C2BA00DB6ADB /* UserLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FA0B912252C2BA00DB6ADB /* UserLocationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D74D8792217A1FEA00B4E055 /* SidebarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidebarController.h; sourceTree = "<group>"; };
+		D74D8793217A1FEA00B4E055 /* SidebarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidebarController.m; sourceTree = "<group>"; };
+		D74D8795217A299100B4E055 /* OrganizationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganizationController.h; sourceTree = "<group>"; };
+		D74D8796217A299100B4E055 /* OrganizationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizationController.m; sourceTree = "<group>"; };
+		D75EE6532175062D00637E88 /* Narko-info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Narko-info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75EE6562175062D00637E88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D75EE6572175062D00637E88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D75EE65D2175062D00637E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D75EE65F2175062E00637E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D75EE6622175062E00637E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D75EE6642175062E00637E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75EE6652175062E00637E88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D75EE67221750C2F00637E88 /* DrugLawDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrugLawDetailController.h; sourceTree = "<group>"; };
+		D75EE67321750C2F00637E88 /* DrugLawDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrugLawDetailController.m; sourceTree = "<group>"; };
+		D76DA52B22712EF200F967EE /* SaveDataSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveDataSingleton.h; sourceTree = "<group>"; };
+		D76DA52C22712EF200F967EE /* SaveDataSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveDataSingleton.m; sourceTree = "<group>"; };
+		D795819B224FC79B0098862E /* DrugListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugListController.h; sourceTree = "<group>"; };
+		D795819C224FC79B0098862E /* DrugListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugListController.m; sourceTree = "<group>"; };
+		D795819E224FC7B70098862E /* DrugDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugDetailController.h; sourceTree = "<group>"; };
+		D795819F224FC7B70098862E /* DrugDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugDetailController.m; sourceTree = "<group>"; };
+		D79581A2224FC8060098862E /* CriminalLawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriminalLawController.m; sourceTree = "<group>"; };
+		D79581A3224FC8060098862E /* AdministrativeLawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdministrativeLawController.h; sourceTree = "<group>"; };
+		D79581A5224FC8060098862E /* CommonLawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonLawViewController.h; sourceTree = "<group>"; };
+		D79581A6224FC8060098862E /* CriminalLawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalLawController.h; sourceTree = "<group>"; };
+		D79581A8224FC8060098862E /* CommonLawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLawViewController.m; sourceTree = "<group>"; };
+		D79581A9224FC8060098862E /* AdministrativeLawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdministrativeLawController.m; sourceTree = "<group>"; };
+		D7A3C1872294990B002D1664 /* PhotoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
+		D7A3C1882294990B002D1664 /* PhotoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		D7A3C18B229499E8002D1664 /* ResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResultController.h; path = "Narko-info/ResultController.h"; sourceTree = "<group>"; };
+		D7A3C18C229499E8002D1664 /* ResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ResultController.m; path = "Narko-info/ResultController.m"; sourceTree = "<group>"; };
+		D7C1CA2C22504A71002FA6B9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D7C1CA2E22504A91002FA6B9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D7C1CA3022504A97002FA6B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7C1CA3222504A9D002FA6B9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D7C1CA3422504AA4002FA6B9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D7C1CA3622504AAA002FA6B9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D7C1CA3822504AAF002FA6B9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D7C1CA3A22504AB4002FA6B9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D7C1CA3C22504ABC002FA6B9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D7C1CA3E22504AC3002FA6B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D7C1CA4022504ACA002FA6B9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D7C1CA4222504AD2002FA6B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7C1CA4422504AD7002FA6B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7C1CA4622504ADC002FA6B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D7C91BC8222DE3BF0080F35B /* CityTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		D7C91BC9222DE3BF0080F35B /* CityTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		D7D9FAF0225038040031C9A3 /* SupportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SupportController.h; sourceTree = "<group>"; };
+		D7D9FAF1225038040031C9A3 /* SupportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupportController.m; sourceTree = "<group>"; };
+		D7D9FAF3225038FE0031C9A3 /* ReportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportController.h; sourceTree = "<group>"; };
+		D7D9FAF4225038FE0031C9A3 /* ReportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportController.m; sourceTree = "<group>"; };
+		D7D9FAF722503C820031C9A3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D7FA0B7A2252C11100DB6ADB /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		D7FA0B7C2252C12000DB6ADB /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		D7FA0B7D2252C12100DB6ADB /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		D7FA0B7E2252C12200DB6ADB /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		D7FA0B902252C2BA00DB6ADB /* UserLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLocationController.h; sourceTree = "<group>"; };
+		D7FA0B912252C2BA00DB6ADB /* UserLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserLocationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D75EE6502175062D00637E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FA0B8F2252C1A700DB6ADB /* UIKit.framework in Frameworks */,
+				D7FA0B8E2252C1A100DB6ADB /* SystemConfiguration.framework in Frameworks */,
+				D7FA0B8D2252C19C00DB6ADB /* QuartzCore.framework in Frameworks */,
+				D7FA0B8C2252C19700DB6ADB /* OpenGLES.framework in Frameworks */,
+				D7FA0B8B2252C19000DB6ADB /* libz.tbd in Frameworks */,
+				D7FA0B8A2252C18700DB6ADB /* libc++.tbd in Frameworks */,
+				D7FA0B892252C17B00DB6ADB /* ImageIO.framework in Frameworks */,
+				D7FA0B882252C17600DB6ADB /* GLKit.framework in Frameworks */,
+				D7FA0B872252C17000DB6ADB /* CoreText.framework in Frameworks */,
+				D7FA0B862252C16D00DB6ADB /* CoreTelephony.framework in Frameworks */,
+				D7FA0B852252C16300DB6ADB /* CoreImage.framework in Frameworks */,
+				D7FA0B842252C15E00DB6ADB /* CoreGraphics.framework in Frameworks */,
+				D7FA0B832252C15800DB6ADB /* CoreData.framework in Frameworks */,
+				D7FA0B822252C14F00DB6ADB /* Accelerate.framework in Frameworks */,
+				D7D9FAF822503C820031C9A3 /* CoreLocation.framework in Frameworks */,
+				D7FA0B7F2252C12200DB6ADB /* GoogleMapsCore.framework in Frameworks */,
+				D7FA0B812252C12200DB6ADB /* GoogleMaps.framework in Frameworks */,
+				D7FA0B7B2252C11100DB6ADB /* GoogleMapsBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D74B673C22372193008F9D5E /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				D74D8792217A1FEA00B4E055 /* SidebarController.h */,
+				D74D8793217A1FEA00B4E055 /* SidebarController.m */,
+			);
+			name = Sidebar;
+			sourceTree = "<group>";
+		};
+		D74B673E223721C6008F9D5E /* Organization */ = {
+			isa = PBXGroup;
+			children = (
+				D7C91BC8222DE3BF0080F35B /* CityTableViewController.h */,
+				D7C91BC9222DE3BF0080F35B /* CityTableViewController.m */,
+				D74D8795217A299100B4E055 /* OrganizationController.h */,
+				D74D8796217A299100B4E055 /* OrganizationController.m */,
+			);
+			name = Organization;
+			sourceTree = "<group>";
+		};
+		D74B6740223721FB008F9D5E /* Law */ = {
+			isa = PBXGroup;
+			children = (
+				D75EE67221750C2F00637E88 /* DrugLawDetailController.h */,
+				D75EE67321750C2F00637E88 /* DrugLawDetailController.m */,
+			);
+			name = Law;
+			sourceTree = "<group>";
+		};
+		D7513CB5224FC71E007DA912 /* Drug */ = {
+			isa = PBXGroup;
+			children = (
+				D795819B224FC79B0098862E /* DrugListController.h */,
+				D795819C224FC79B0098862E /* DrugListController.m */,
+				D795819E224FC7B70098862E /* DrugDetailController.h */,
+				D795819F224FC7B70098862E /* DrugDetailController.m */,
+			);
+			name = Drug;
+			sourceTree = "<group>";
+		};
+		D75EE64A2175062D00637E88 = {
+			isa = PBXGroup;
+			children = (
+				D7A3C18B229499E8002D1664 /* ResultController.h */,
+				D7A3C18C229499E8002D1664 /* ResultController.m */,
+				D75EE6552175062D00637E88 /* Narko-info */,
+				D75EE6542175062D00637E88 /* Products */,
+				D7D9FAF622503C820031C9A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D75EE6542175062D00637E88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D75EE6532175062D00637E88 /* Narko-info.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D75EE6552175062D00637E88 /* Narko-info */ = {
+			isa = PBXGroup;
+			children = (
+				D75EE6562175062D00637E88 /* AppDelegate.h */,
+				D75EE6572175062D00637E88 /* AppDelegate.m */,
+				D76DA52B22712EF200F967EE /* SaveDataSingleton.h */,
+				D76DA52C22712EF200F967EE /* SaveDataSingleton.m */,
+				D74B673C22372193008F9D5E /* Sidebar */,
+				D7513CB5224FC71E007DA912 /* Drug */,
+				D74B6740223721FB008F9D5E /* Law */,
+				D79581A1224FC7E30098862E /* Law Codex */,
+				D74B673E223721C6008F9D5E /* Organization */,
+				D75EE65F2175062E00637E88 /* Assets.xcassets */,
+				D7D9FAEF225037460031C9A3 /* Support and Report */,
+				D7FA0B932252C2D700DB6ADB /* GeoLocation */,
+				D7A3C18A2294991C002D1664 /* PhotoSender */,
+				D75EE6612175062E00637E88 /* LaunchScreen.storyboard */,
+				D75EE65C2175062D00637E88 /* Main.storyboard */,
+				D7FA0B7D2252C12100DB6ADB /* GoogleMaps.bundle */,
+				D7FA0B7E2252C12200DB6ADB /* GoogleMaps.framework */,
+				D7FA0B7C2252C12000DB6ADB /* GoogleMapsCore.framework */,
+				D7FA0B7A2252C11100DB6ADB /* GoogleMapsBase.framework */,
+				D75EE6642175062E00637E88 /* Info.plist */,
+				D75EE6652175062E00637E88 /* main.m */,
+			);
+			path = "Narko-info";
+			sourceTree = "<group>";
+		};
+		D79581A1224FC7E30098862E /* Law Codex */ = {
+			isa = PBXGroup;
+			children = (
+				D79581A5224FC8060098862E /* CommonLawViewController.h */,
+				D79581A8224FC8060098862E /* CommonLawViewController.m */,
+				D79581A3224FC8060098862E /* AdministrativeLawController.h */,
+				D79581A9224FC8060098862E /* AdministrativeLawController.m */,
+				D79581A6224FC8060098862E /* CriminalLawController.h */,
+				D79581A2224FC8060098862E /* CriminalLawController.m */,
+			);
+			name = "Law Codex";
+			sourceTree = "<group>";
+		};
+		D7A3C18A2294991C002D1664 /* PhotoSender */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3C1872294990B002D1664 /* PhotoController.h */,
+				D7A3C1882294990B002D1664 /* PhotoController.m */,
+			);
+			name = PhotoSender;
+			sourceTree = "<group>";
+		};
+		D7D9FAEF225037460031C9A3 /* Support and Report */ = {
+			isa = PBXGroup;
+			children = (
+				D7D9FAF0225038040031C9A3 /* SupportController.h */,
+				D7D9FAF1225038040031C9A3 /* SupportController.m */,
+				D7D9FAF3225038FE0031C9A3 /* ReportController.h */,
+				D7D9FAF4225038FE0031C9A3 /* ReportController.m */,
+			);
+			name = "Support and Report";
+			sourceTree = "<group>";
+		};
+		D7D9FAF622503C820031C9A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7C1CA4622504ADC002FA6B9 /* UIKit.framework */,
+				D7C1CA4422504AD7002FA6B9 /* SystemConfiguration.framework */,
+				D7C1CA4222504AD2002FA6B9 /* QuartzCore.framework */,
+				D7C1CA4022504ACA002FA6B9 /* OpenGLES.framework */,
+				D7C1CA3E22504AC3002FA6B9 /* libz.tbd */,
+				D7C1CA3C22504ABC002FA6B9 /* libc++.tbd */,
+				D7C1CA3A22504AB4002FA6B9 /* ImageIO.framework */,
+				D7C1CA3822504AAF002FA6B9 /* GLKit.framework */,
+				D7C1CA3622504AAA002FA6B9 /* CoreText.framework */,
+				D7C1CA3422504AA4002FA6B9 /* CoreTelephony.framework */,
+				D7C1CA3222504A9D002FA6B9 /* CoreImage.framework */,
+				D7C1CA3022504A97002FA6B9 /* CoreGraphics.framework */,
+				D7C1CA2E22504A91002FA6B9 /* CoreData.framework */,
+				D7C1CA2C22504A71002FA6B9 /* Accelerate.framework */,
+				D7D9FAF722503C820031C9A3 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7FA0B932252C2D700DB6ADB /* GeoLocation */ = {
+			isa = PBXGroup;
+			children = (
+				D7FA0B902252C2BA00DB6ADB /* UserLocationController.h */,
+				D7FA0B912252C2BA00DB6ADB /* UserLocationController.m */,
+			);
+			name = GeoLocation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D75EE6522175062D00637E88 /* Narko-info */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75EE6692175062E00637E88 /* Build configuration list for PBXNativeTarget "Narko-info" */;
+			buildPhases = (
+				D75EE64F2175062D00637E88 /* Sources */,
+				D75EE6502175062D00637E88 /* Frameworks */,
+				D75EE6512175062D00637E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Narko-info";
+			productName = "Narko-info";
+			productReference = D75EE6532175062D00637E88 /* Narko-info.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D75EE64B2175062D00637E88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = ioszhuk;
+				TargetAttributes = {
+					D75EE6522175062D00637E88 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = D75EE64E2175062D00637E88 /* Build configuration list for PBXProject "Narko-info" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D75EE64A2175062D00637E88;
+			productRefGroup = D75EE6542175062D00637E88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D75EE6522175062D00637E88 /* Narko-info */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D75EE6512175062D00637E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75EE6632175062E00637E88 /* LaunchScreen.storyboard in Resources */,
+				D75EE6602175062E00637E88 /* Assets.xcassets in Resources */,
+				D75EE65E2175062D00637E88 /* Main.storyboard in Resources */,
+				D7FA0B802252C12200DB6ADB /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D75EE64F2175062D00637E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75EE67421750C2F00637E88 /* DrugLawDetailController.m in Sources */,
+				D79581AA224FC8060098862E /* CriminalLawController.m in Sources */,
+				D795819D224FC79B0098862E /* DrugListController.m in Sources */,
+				D79581A0224FC7B70098862E /* DrugDetailController.m in Sources */,
+				D79581AD224FC8060098862E /* AdministrativeLawController.m in Sources */,
+				D75EE6662175062E00637E88 /* main.m in Sources */,
+				D79581AC224FC8060098862E /* CommonLawViewController.m in Sources */,
+				D74D8797217A299100B4E055 /* OrganizationController.m in Sources */,
+				D74D8794217A1FEA00B4E055 /* SidebarController.m in Sources */,
+				D76DA52D22712EF200F967EE /* SaveDataSingleton.m in Sources */,
+				D7A3C1892294990B002D1664 /* PhotoController.m in Sources */,
+				D7FA0B922252C2BA00DB6ADB /* UserLocationController.m in Sources */,
+				D75EE6582175062D00637E88 /* AppDelegate.m in Sources */,
+				D7A3C18D229499E8002D1664 /* ResultController.m in Sources */,
+				D7C91BCA222DE3BF0080F35B /* CityTableViewController.m in Sources */,
+				D7D9FAF5225038FE0031C9A3 /* ReportController.m in Sources */,
+				D7D9FAF2225038040031C9A3 /* SupportController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D75EE65C2175062D00637E88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75EE65D2175062D00637E88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D75EE6612175062E00637E88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75EE6622175062E00637E88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D75EE6672175062E00637E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D75EE6682175062E00637E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D75EE66A2175062E00637E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG3FRRT52N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Narko-info",
+				);
+				INFOPLIST_FILE = "Narko-info/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ioszhuk.NarkoInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D75EE66B2175062E00637E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG3FRRT52N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Narko-info",
+				);
+				INFOPLIST_FILE = "Narko-info/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ioszhuk.NarkoInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D75EE64E2175062D00637E88 /* Build configuration list for PBXProject "Narko-info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75EE6672175062E00637E88 /* Debug */,
+				D75EE6682175062E00637E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75EE6692175062E00637E88 /* Build configuration list for PBXNativeTarget "Narko-info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75EE66A2175062E00637E88 /* Debug */,
+				D75EE66B2175062E00637E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D75EE64B2175062D00637E88 /* Project object */;
+}
